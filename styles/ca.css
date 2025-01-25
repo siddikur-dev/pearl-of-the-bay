@@ -158,16 +158,14 @@ a {
 }
 
 .dont-account {
-    display: flex;
     padding-left: 50px;
+    display: flex;
 }
 
 .caa {
     color: #F9A51A;
 }
-.color{
-    color: #F9A51A;
-}
+
 .or-login {
     font-weight: 700;
     font-size: 1.5rem;
@@ -198,4 +196,8 @@ a {
     margin: 0 auto;
     padding-top: 15px;
     text-align: center;
+}
+
+.color{
+    color: #F9A51A;
 }
