@@ -80,7 +80,7 @@
         margin: 0 auto;
         width: 320px;
         padding: 0px;
-        background:unset;
+        background: unset;
     }
 
     form {
@@ -92,7 +92,7 @@
     .dhaka {
         width: 300px;
         height: 20px;
-        
+
     }
 
     .from-to {
@@ -105,11 +105,36 @@
         width: 320px;
         height: 40px;
     }
-    .booking-bottom-arrow  {
+
+    .booking-bottom-arrow {
         display: none;
     }
 
+    /* LOgin page */
+    .login-class {
+        margin-top: 29px;
+        padding: 25px;
+        margin: 0 auto;
+        border: 0px solid rgb(171, 171, 171);
+        border-radius: 4px;
+        width: 320px;
+        background: rgba(255, 255, 255, 0.2);
+    }
 
+
+    .login-input{
+        width: 300px;
+    }
+    .login-btn {
+        padding: 15px 140px}
+    .facebook-login {
+        margin-left: 20px;
+        display: flex;
+        border: 1px solid rgb(199, 199, 199);
+        border-radius: 57px;
+        width: 300px;
+        height: 51px;
+    }
 
 
 
@@ -138,7 +163,7 @@
 
     .responsive-hide,
     .arro,
-    .booking-bottom-arrow  {
+    .booking-bottom-arrow {
         display: none;
     }
 
@@ -181,15 +206,18 @@
         margin: 0 auto;
         width: 320px;
         padding: 0px;
-        background:unset;
+        background: unset;
     }
-    .dhaka{
+
+    .dhaka {
         width: 300px;
     }
-    .from-to{
+
+    .from-to {
         width: 130px;
     }
-    .s-booking{
+
+    .s-booking {
         width: 325px;
         /* height: 0; */
     }

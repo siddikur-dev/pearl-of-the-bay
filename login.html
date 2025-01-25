@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/media.css">
 </head>
+
 <body class="montserrat-font">
-    <header >
+    <header>
         <nav class="navber d-flex  ">
             <div class="left-logo-txt d-flex">
                 <a class="none" href="index.html">
-                 <img src="images/icons/logo.png" alt="" class="luggaze-logo">
-                 <h1 class="nav-title">Pearl Of The <br> Bay</h1>
+                    <img src="images/icons/logo.png" alt="" class="luggaze-logo">
+                    <h1 class="nav-title">Pearl Of The <br> Bay</h1>
                 </a>
 
             </div>
@@ -29,16 +31,45 @@
 
 
             <a class="none" href="login.html">
-            <button class="btn-primary ">Login</button>
+                <button class="btn-primary ">Login</button>
 
             </a>
         </nav>
         <div class=" phone-nav hide  ">
             <a href="index.html"> <img src="images/icons/logo.png" alt="" class="logo"></a>
             <a href="booking.html">
-            <img src="images/icons/hamburger.svg" alt="" class="logo">
+                <img src="images/icons/hamburger.svg" alt="" class="logo">
             </a>
+        </div>
+        <div class="login-class">
+            <h3 class="login-title">Login</h3>
+            <form action="" class="login-lf">
+                <input class="login-input" type="text" name="" placeholder="Username or Email"><br>
+                <input class="login-input" type="password" placeholder="Password">
+                <div class="remember-forget">
+                    <div>
+                        <input class="checkbox" type="checkbox" id="myCheck" value=" Checkbox"> Remember Me 
+                    </div>
+                    <p class="forgot-password">Fogot Password</p>
+                </div>
+
+                <input class="login-btn" type="submit" value="Login">
+            </form>
+            <div class="dont-account">
+                <p class="login-dont-creat">Don’t have an account? <span class="caa"> Create an account</span></p>
+
+            </div>
+        </div>
+        <p class="or-login">or</p>
+        <div class="facebook-login">
+            <img src="images/icons/fb.png" alt="" class="fb-logo">
+            <p class="fb-txt">Continue with Facebook</p>
+        </div>
+        <div class="facebook-login">
+            <img src="images/icons/google.png" alt="" class="fb-logo">
+            <p class="fb-txt">Continue with Google</p>
         </div>
     </header>
 </body>
+
 </html>

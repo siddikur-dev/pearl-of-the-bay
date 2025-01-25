@@ -20,28 +20,19 @@ body {
     display: flex;
 }
 
-.none{
+.none {
     text-decoration: none;
 }
-.hide{
+
+.hide {
     display: none;
 }
 
 /*header */
-/* header {
-
-    background: linear-gradient(0.00deg, rgb(0, 0, 0), rgba(123, 190, 61, 0) 130%), url(../images/Rectangle\ 1.png);
-    width: 100%;
-    height: 100vh;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+header{
+    max-width: 1140px;
     margin: 0 auto;
-    max-width: 100%;
-
-
-} */
-
+}
 .header-container {
     max-width: 1140px;
     margin: 0 auto;
@@ -70,7 +61,7 @@ body {
 
 .search {
     position: relative;
-    left: 80px;
+    left: 40px;
     color: rgb(0, 0, 0);
     height: 25px;
 }
@@ -114,4 +105,94 @@ a {
     border-radius: 5px;
     padding: 15px 30px;
     background: rgb(249, 165, 26);
+}
+
+
+/* login*/
+.login-class {
+    padding: 25px;
+    margin: 0 auto;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 4px;
+    width: 470px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.login-input {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C5C5C5;
+    margin-bottom: 30px;
+    width: 460px;
+    outline: none;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.login-btn {
+    padding: 15px 215px;
+    background: rgb(249, 165, 26);
+    border: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+.forgot-password {
+    color: #F9A51A;
+    /* text-decoration: underline; */
+}
+
+.checkbox {
+    font-weight: bold;
+}
+
+.dont-account {
+    padding-left: 50px;
+}
+
+.caa {
+    color: #F9A51A;
+}
+
+.or-login {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.facebook-login {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    display: flex;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 57px;
+    width: 461px;
+    height: 51px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.fb-logo {
+    padding: 7px;
+    width: 37px;
+}
+.fb-txt{
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
 }
