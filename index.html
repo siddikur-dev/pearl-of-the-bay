@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pearl of the Bay</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/media.css">
-    <link rel="shortcut icon" href="images/icons/logo.png" type="image/x-icon">
-</head>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/icons/logo.png"
+      type="image/x-icon"
+    />
+    <!-- daisyUI  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "button-color": "#F85559",
+              "black-color": "#131318",
+              "description-color": "rgba(19,19,24,0.6)",
+              "card-description-color": "rgba(18, 18, 18, 0.6)",
+              "icon-color": "rgba(18, 18, 18, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- daisyUi CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body class="montserrat-font">
-    <header>
-        <section class="header-container">
-            <nav class="navber d-flex  ">
-                <div class="left-logo-txt d-flex">
-                   <a class="none" href="index.html">
-                    <img src="images/icons/logo.png" alt="" class="luggaze-logo">
-                    <h1 class="nav-title">Pearl Of The <br> Bay</h1>
-                   </a>
+  <body class="montserrat-font ">
+    <header class=" ">
+      <section class=" px-5 sm:px-7 lg:px-14 header-container container ">
+        <nav class="navber d-flex">
+          <div class="left-logo-txt d-flex">
+            <a class="none" href="index.html">
+                <img src="images/icons/logo.png" alt="" class="  h-24 xl:h-full luggaze-logo">
+                <h1 class="nav-title hidden xl:block">Pearl Of The <br> Bay</h1>
+            </a>
+          </div>
+          <img src="images/icons/icon.png" alt="" class="search" />
+          <input
+            class="search-box white"
+            type="search"
+            placeholder="Search Your Destination"
+          />
+          <ul class="responsive-hide">
+            <li><a class="list-item" href="">News</a></li>
+            <li><a class="list-item" href="">Destination</a></li>
+            <li><a class="list-item" href="">Blog</a></li>
+            <li><a class="list-item" href="">Contact</a></li>
+          </ul>
 
-                </div>
-                <img src="images/icons/icon.png" alt="" class="search">
-                <input class="search-box white" type="search" placeholder="Search Your Destination">
-                <ul class="responsive-hide">
-                    <li><a class="list-item" href="">News</a></li>
-                    <li><a class="list-item" href="">Destination</a></li>
-                    <li><a class="list-item" href="">Blog</a></li>
-                    <li><a class="list-item" href="">Contact</a></li>
-                </ul>
-
-                <a class="none" href="login.html"><button class="btn-primary ">Login</button></a>
-            </nav>
-            <div class=" phone-nav hide  ">
-                <a href="booking.html"> <img src="images/icons/logo.png" alt="" class="logo"></a>
-                <a href="login.html">
-                <img src="images/icons/hamburger.svg" alt="" class="logo">
-                </a>
+          <a class="none" href="login.html"
+            ><button class="button-primary">Login</button></a
+          >
+        </nav>
+        <div class="phone-nav hide">
+          <a href="booking.html">
+            <img src="images/icons/logo.png" alt="" class="logo"
+          /></a>
+          <a href="login.html">
+            <img src="images/icons/hamburger.svg" alt="" class="logo" />
+          </a>
+        </div>
+        <div class="header-hero-container d-flex white">
+          <div class="header-left-side">
+            <h1 class="header-title">Cox's bazar</h1>
+            <p class="header-description">
+              Cox's Bazar is a city, fishing port, tourism centre and district
+              headquarters in southeastern Bangladesh. It is famous mostly for
+              its long natural sandy beach, and it ...
+            </p>
+            <a class="none" href="booking.html">
+              <button class="button-primary mx-auto lg:mx-0">
+                Booking
+              </button>
+            </a>
+          </div>
+          <div class="header-right-side d-flex">
+            <div class="single-img">
+              <img
+                src="images/Rectangle 1.png"
+                alt=""
+                class="coxs-bazar border"
+              />
+              <p class="coxs-bazar-txt">Cox’s Bazar</p>
             </div>
-            <div class="header-hero-container d-flex white">
-                <div class="header-left-side ">
-                    <h1 class="header-title">Cox's bazar</h1>
-                    <p class="header-description">Cox's Bazar is a city, fishing port, tourism centre and district
-                        headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach,
-                        and it ...</p>
-                    <a class="none" href="booking.html">
-                        <button class="btn-primary">Booking <img src="images/icons/right.png" alt="" class="right-arro">
-                        </button>
-                    </a>
-                </div>
-                <div class="header-right-side d-flex">
-                    <div class="single-img">
-                        <img src="images/Rectangle 1.png" alt="" class="coxs-bazar border ">
-                        <p class="coxs-bazar-txt">Cox’s Bazar</p>
-
-
-                    </div>
-                    <div class="single-img">
-                        <img src="images/Sreemongol.png" alt="" class="coxs-bazar">
-                        <p class="coxs-bazar-txt sree">Sreemangal</p>
-
-                    </div>
-                    <div class="single-img">
-                        <img src="images/sundorbon.png" alt="" class="coxs-bazar">
-                        <p class="coxs-bazar-txt sund">Sundarbans</p>
-                    </div>
-                    <!-- <div class=" right-img d-flex">
-                    </div> -->
-                </div>
+            <div class="single-img">
+              <img src="images/Sreemongol.png" alt="" class="coxs-bazar" />
+              <p class="coxs-bazar-txt sree">Sreemangal</p>
             </div>
-            <!-- <div class="arro">
-                <a href="index.html">
-                    <img src="images/icons/left.png" alt="" class="arrow left"></a>
-                <a href="">
-                    <img src="images/icons/right.png" alt="" class="arrow right">
-
-                </a>
-            </div> -->
-        </section>
-
+            <div class="single-img">
+              <img src="images/sundorbon.png" alt="" class="coxs-bazar" />
+              <p class="coxs-bazar-txt sund">Sundarbans</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-
-</body>
-
+  </body>
 </html>

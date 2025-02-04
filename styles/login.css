@@ -148,6 +148,11 @@ a {
     text-align: center;
 }
 
+.t{
+    text-decoration: none;
+    color: #000;
+}
+
 .forgot-password {
     color: #F9A51A;
     /* text-decoration: underline; */

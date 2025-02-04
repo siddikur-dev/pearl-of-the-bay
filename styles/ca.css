@@ -144,10 +144,14 @@ a {
     padding: 15px 215px;
     background: rgb(249, 165, 26);
     border: none;
+    color: white;
     font-weight: 500;
     text-align: center;
 }
-
+.text-black{
+    color: black;
+    text-decoration: none;
+}
 .forgot-password {
     color: #F9A51A;
     /* text-decoration: underline; */
