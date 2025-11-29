@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+a.active {
+  color: #FFf900;
+}
+
+a.pending {
+  color: blue;
+}
+
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/bg-img.png');
+  background-position: center;
+  background-size: cover;
+  height: 516px;
+}
