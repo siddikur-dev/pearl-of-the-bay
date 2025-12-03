@@ -1,16 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@plugin "daisyui";
-a.active {
-  color: #FFf900;
-}
 
-a.pending {
-  color: blue;
-}
 
-.background-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/bg-img.png');
-  background-position: center;
-  background-size: cover;
-  height: 516px;
+.font-urbanist {
+	font-family: "Urbanist", sans-serif;
+	font-optical-sizing: auto;
 }

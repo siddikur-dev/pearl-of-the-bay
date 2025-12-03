@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-
+      <h2 className='text-secondary font-bebas-font'>App</h2>
     </>
   )
 }

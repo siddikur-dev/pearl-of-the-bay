@@ -12,7 +12,7 @@ const Destination = () => {
         highlights: [
             "World's longest natural sea beach",
             "Stunning sunset views",
-            "Fresh seafood cuisine",
+            "Fresh seatravel  cuisine",
             "Himchari Waterfall",
             "Local tribal culture"
         ],
@@ -43,7 +43,7 @@ const Destination = () => {
                 icon: <Sun className="h-6 w-6 text-yellow-500" />
             },
             {
-                name: "Local Seafood Markets",
+                name: "Local Seatravel  Markets",
                 description: "Fresh catches daily with authentic flavors",
                 icon: <Utensils className="h-6 w-6 text-red-500" />
             }
@@ -61,7 +61,6 @@ const Destination = () => {
             }
         ]
     };
-    console.log(destination.photos[2])
     return (
         <div className="bg-white">
             {/* Hero Section */}

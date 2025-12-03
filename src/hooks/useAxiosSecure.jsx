@@ -1,13 +1,13 @@
 import axios from "axios";
 import useAuth from "./useAuth";
+import Swal from "sweetalert2";
 import toast from "react-hot-toast";
-
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: import.meta.env.VITE_server_api,
 });
 
 const useAxiosSecure = () => {
-  const { user } = useAuth();
+  const { user, logOut } = useAuth();
 
   axiosInstance.interceptors.request.use((config) => {
     config.headers.authorization = `Bearer ${user?.accessToken}`;
@@ -21,8 +21,8 @@ const useAxiosSecure = () => {
       return response;
     },
     (error) => {
-      toast.error("Mama! Logout kore dimu kintu");
-
+      console.log(error);
+      toast.error("mama logout kore dibo kintu")
       // if (error.status === 401 || error.status === 403) {
       //   logOut()
       //     .then(() => {
@@ -37,7 +37,6 @@ const useAxiosSecure = () => {
       //       console.log(err);
       //     });
       // }
-
       return Promise.reject(error);
     }
   );
