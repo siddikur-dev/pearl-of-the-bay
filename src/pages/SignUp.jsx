@@ -64,6 +64,7 @@ const SignUp = () => {
       .then((result) => {
         toast.success("Google sign in successful!");
         navigate(location.state || "/");
+        console.log(result);
       })
       .catch(console.log);
   };

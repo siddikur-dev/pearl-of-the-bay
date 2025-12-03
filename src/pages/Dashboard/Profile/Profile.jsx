@@ -49,8 +49,6 @@ const Profile = () => {
         });
     }
   }, [user, axiosSecure]);
-
-  console.log(user);
   const formatDate = (dateString) => {
     if (!dateString) return "Not available";
     return new Date(dateString).toLocaleDateString("en-US", {

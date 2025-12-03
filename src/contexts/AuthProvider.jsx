@@ -14,6 +14,7 @@ import { auth } from "../firebase/firebase.init";
 
 const AuthProvider = ({ children }) => {
   const googleProvider = new GoogleAuthProvider();
+  googleProvider.addScope("email");
 
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -44,7 +45,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
     });
     return () => {
-      unsubscribe;
+      unsubscribe();
     };
   }, []);
 

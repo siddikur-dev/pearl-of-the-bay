@@ -20,7 +20,7 @@ const AllBookings = () => {
   // const [selectedRows, setSelectedRows] = useState([]);
   // const [filterStatus, setFilterStatus] = useState("all");
   const { user } = useAuth();
-
+  console.log(user);
   const { data: allBookings = [], refetch } = useQuery({
     queryKey: ["bookings"],
     queryFn: async () => {
