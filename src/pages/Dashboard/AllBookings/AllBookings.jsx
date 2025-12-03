@@ -17,8 +17,8 @@ import useAuth from "../../../hooks/useAuth";
 const AllBookings = () => {
   const axiosInstance = useAxiosSecure();
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedRows, setSelectedRows] = useState([]);
-  const [filterStatus, setFilterStatus] = useState("all");
+  // const [selectedRows, setSelectedRows] = useState([]);
+  // const [filterStatus, setFilterStatus] = useState("all");
   const { user } = useAuth();
 
   const { data: allBookings = [], refetch } = useQuery({
@@ -28,7 +28,6 @@ const AllBookings = () => {
       return res.data;
     },
   });
-
   const filteredBookings = allBookings.filter((booking) => {
     const matchesSearch =
       booking.displayName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -94,7 +93,9 @@ const AllBookings = () => {
       {/* Header */}
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-gray-800">All Bookings</h2>
-        <p className="text-gray-500">Total {filteredBookings.length} bookings found</p>
+        <p className="text-gray-500">
+          Total {filteredBookings.length} bookings found
+        </p>
       </div>
 
       {/* Search Bar */}
@@ -154,7 +155,9 @@ const AllBookings = () => {
 
                   <td className="p-3 font-semibold">{booking.totalPrice}</td>
 
-                  <td className="p-3">{getPaymentStatusBadge(booking.paymentStatus)}</td>
+                  <td className="p-3">
+                    {getPaymentStatusBadge(booking.paymentStatus)}
+                  </td>
 
                   <td className="p-3 text-center">
                     <button
